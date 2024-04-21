@@ -23,7 +23,7 @@ document.addEventListener('DOMContentLoaded', function() {
             <img onclick="playSound('${data[0].phonetics[0].audio}')" src="static/speaker-filled-audio-tool.png" id="sound" class="max-w-5 ml-2" alt="">
         </div>
         <div style="color:gray" class="flex items-center justify-center">
-            <p><i>${data[0].meanings[0].partOfSpeech} /<i id="transcription">${data[0].phonetic}</i>/</i></p>
+            <p><i>${data[0].meanings[0].partOfSpeech} <i id="transcription">${data[0].phonetic}</i></i></p>
         </div>
 
         <div class="m-5 flex items-center justify-center">
