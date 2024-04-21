@@ -5,14 +5,36 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dictionary</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    <script src="script.js"></script>
 </head>
 <body>
-    <h1>Dictionary Web App</h1>
-    <form action="">
-        <input type="text" placeholder="Search word...">
-    </form>
+    <!-- <div class="m-10 flex items-center justify-center">
+        <h1 class="text-9xl">Dictionary Web App</h1>
+    </div> -->
+    <div class="m-10 flex items-center justify-center">
+            <input id="searchInput" class="border border-gray-300 focus:outline-none focus:ring focus:ring-blue-500 rounded-lg px-4 py-2 w-64" type="text" placeholder="Search word...">
+            <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-lg ml-2">Search</button>
+    </div>
     <ul>
-        
+
     </ul>
+    <div class="p-5 m-5 border-8 border-black border-solid rounded-lg" id="wordContainer">
+        <div class="m-5 flex items-center justify-center">
+            <h1 id="word" class="text-5xl">Word</h1>
+            <img src="static/speaker-filled-audio-tool.png" id="sound" class="max-w-5 ml-2" alt="">
+        </div>
+        <div style="color:gray" class="flex items-center justify-center">
+            <p><i>type /<i id="transcription">phonetic</i>/</i></p>
+        </div>
+
+        <div class="m-5 flex items-center justify-center">
+            <p id="definition">Definiton</p>
+        </div>
+        
+        <div class="m-5 flex items-center justify-center">
+            <p id="example"><i>Example sentence</i></p>
+        </div>
+    </div>
+
 </body>
 </html>
